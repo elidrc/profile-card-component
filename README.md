@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/profile-card-component-1aPoQF_yRn)
 - [Live Site URL](https://elidrc.github.io/profile-card-component/)
 
 ## My process
