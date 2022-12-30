@@ -1,0 +1,131 @@
+@import url(./reset.css);
+
+:root {
+    /* Primary  */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    
+    /* Neutral  */
+    --dark-gray: hsla(0, 0%, 59%, 0.2);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    min-height:calc(100vh - 0.01px);
+    background-image: 
+        url(../images/bg-pattern-top.svg),
+        url(../images/bg-pattern-bottom.svg);
+    background-position: 
+        bottom 50vh right 35vw,
+        top 50vh left 25vw;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: calc(18rem / 16);
+    overflow: hidden;
+}
+
+main {
+    width: calc(326rem / 16);
+}
+
+.card{
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-header .bg {
+    width: 100%;
+}
+
+.card-header .photo {
+    position: absolute;
+    bottom: calc(-48rem / 16);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(96rem / 16);
+    border-radius: 50%;
+    border: calc(5rem / 16) solid white;
+}
+
+.card-body h1 {
+    color: var(--very-dark-desaturated-blue);
+    margin-top: calc(72rem / 16);
+    font-size: calc(18rem / 16);
+}
+
+.card-body h1 > span {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    margin-left: calc(8rem / 16);
+}
+
+.card-body p {
+    font-size: calc(14rem / 16);
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    padding-top: calc(10rem / 16);
+    padding-bottom: calc(24rem / 16);
+    margin-bottom: calc(26rem / 16);
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.card-footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-footer ul li {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: calc(8rem / 16);
+}
+
+.card-footer ul li > span {
+    display: block;
+    font-size: calc(12rem / 16);
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.attribution {
+    font-size: calc(12rem / 16);
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--dark-grayish-blue);
+}
+
+@media screen and (min-width: calc(600rem / 16)){
+    body {
+        background-position:
+            bottom 40vh right 50vw,
+            top 40vh left 50vw;
+    }
+    
+    main {
+        width: calc(350rem / 16);
+    }
+}
