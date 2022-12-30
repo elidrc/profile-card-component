@@ -62,7 +62,7 @@ main {
 
 .card-body h1 {
     color: var(--very-dark-desaturated-blue);
-    margin-top: calc(72rem / 16);
+    margin-top: calc(62rem / 16);
     font-size: calc(18rem / 16);
 }
 
@@ -78,7 +78,6 @@ main {
     color: var(--dark-grayish-blue);
     padding-top: calc(10rem / 16);
     padding-bottom: calc(24rem / 16);
-    margin-bottom: calc(26rem / 16);
     border-bottom: 1px solid var(--dark-gray);
 }
 
@@ -87,13 +86,12 @@ main {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    padding: 0;
+    padding: calc(20rem / 16) 0;
 }
 
 .card-footer ul li {
     font-weight: 700;
     color: var(--very-dark-desaturated-blue);
-    margin-bottom: calc(8rem / 16);
 }
 
 .card-footer ul li > span {
